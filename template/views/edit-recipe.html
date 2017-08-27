@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+<body>
+   <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">More-Recipe</a>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Recipes</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Find a recipe">
+          <a href="recipe.html" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</a>
+        </form>
+        <form class="form-inline my-2 my-lg-0">
+          <a href="#" class="btn btn-outline-danger my-2 my-sm-0">Sign Out</a>
+        </form>
+      </div>
+    </nav>
+    </br>
+    <div class="col-md-6" class="container">
+      <h2 class="bg-primary text-white"><strong>Edit Recipe</strong></h2>
+    </div>
+  </br>
+    <form>
+      </br>
+  <div class="col-md-6" class="form-group">
+    <label for="exampleInputEmail1"><strong>Name Of Recipe</strong></label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+    </div>
+  </br>
+    <div class="col-md-6" class="form-group">
+    <label for="exampleInputFile"><strong>Upload Image</strong></label>
+    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+    
+  </div>
+  </br>
+ <div class="col-md-6"  class="form-group">
+    <label for="exampleTextarea"><strong>Description</strong></label>
+    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Describe your Recipe"></textarea>
+  </div>
+  </br>
+  <div class="col-md-6" class="form-group">
+    <label for="exampleSelect1"><strong>Meal and Recipe Types</strong></label>
+    <select class="form-control" id="exampleSelect1">
+      <option>Soups and Stews</option>
+      <option>Breakfast</option>
+      <option>Dinner</option>
+      <option>Salads</option>
+      <option>Lunch</option>
+      <option>Soups and Stews</option>
+      <option>Drinks</option>
+      <option>Smoothie</option>
+      <option>Bread, Muffins & Scones</option>
+      <option>Desserts</option>
+    </select>
+  </div>
+  </br>
+  <div class="col-md-6" class="form-group">
+    <label for="exampleSelect1"><strong>Main Ingredients</strong></label>
+    <select class="form-control" id="exampleSelect1">
+      <option>Dairy</option>
+      <option>Poultry</option>
+      <option>Meat</option>
+      <option>Fish</option>
+      <option>Fruits</option>
+      <option>Grains</option>
+      <option>Vegetable</option>
+      <option>Others</option>
+    </select>
+  </div>
+  </br>
+  <div class="col-md-6" class="form-group">
+    <label for="exampleTextarea"><strong>Preparations</strong></label>
+    <textarea class="form-control" id="exampleTextarea" rows="5"></textarea>
+  </div>
+  </br>
+  <button type="submit" class="btn btn-primary"><strong>Submit</strong></button>
+</form>
+</body>
+</html>
