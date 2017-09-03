@@ -16,7 +16,10 @@ const Users = {
       isEmail: true
     }
   },
-  fullName: {
+  firstName: {
+    type: Sequelize.STRING,
+     },
+  lastName: {
     type: Sequelize.STRING,
   },
   password: {
