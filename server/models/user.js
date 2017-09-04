@@ -1,7 +1,7 @@
 const Sequelize = require('../sequelize.js');
 
 
-const Users = {
+const UserAtrr = {
   username: {
     type: Sequelize.STRING,
     allowNull: false,
@@ -12,27 +12,24 @@ const Users = {
   },
   email: {
     type: Sequelize.STRING,
+    unique: true,
+    
     validate: {
       isEmail: true
     }
   },
-  firstName: {
+  fullName: {
     type: Sequelize.STRING,
+    allowNull: false
      },
-  lastName: {
-    type: Sequelize.STRING,
-  },
   password: {
     type: Sequelize.STRING,
+    allowNull: false
   },
   salt: {
     type: Sequelize.STRING
   }
 }
 
-const options = {
-  freezeTableName: true
-}
 
-module.exports.Users = Users;
-module.exports.options = options;
+module.exports.Users = UserAtrr;
