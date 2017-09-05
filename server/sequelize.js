@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize')
 
-const sequelize = new Sequelize('postgres://postgres:mukolo@localhost:5432/more_recipe');
+const sequelize = new Sequelize('postgres://postgres:mukolo@localhost/more_recipe');
 
 sequelize
   .authenticate()

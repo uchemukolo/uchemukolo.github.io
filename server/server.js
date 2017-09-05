@@ -15,8 +15,9 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse applica
 app.use(methodOverride());
 
 
-app.get("/", (req, res) =>{
-    res.send('hello world');
+// APIs
+app.get('/api/users/index', (req, res) =>{
+    res.json({name: "Hello World"});
 });
 
 app.listen(3030, () =>{

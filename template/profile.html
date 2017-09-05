@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>More-Recipe</title>
+  <title>Login</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" 
   integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" 
   crossorigin="anonymous">
@@ -52,42 +52,50 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Username">
-      <input class="form-control mr-sm-2" type="password" placeholder="Password">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: #ffffff;">Sign In</button>
+        <a href="#" class="btn btn-outline-danger my-2 my-sm-0" style="color:#ffffff;">Sign Out</a>
     </form>
   </div>
 </nav>
-
-<h4 class="container"> <span>More-Recipe</span> provides a platform for users to share the awesome and exciting recipe ideas they have invented or learnt.</h4>
-
-<div class="row animated fadeInLeft" style="padding:10px">
-    <div class="col-md-4 offset-md-4 jumbotron" style="background-color:#FFB6C1; color:#ffffff;">
-      <h3  style="text-align:center;">Register</h3>
-      <form>
-        <div class="form-group">
-          <label >Username</label>
-          <input type="text" class="form-control" id="formUsernameInput" placeholder="Username">
-
-          <label >First Name</label>
-          <input type="text" class="form-control" id="formGroupFullNameInput" placeholder="First Name">
-
-          <label >Last Name</label>
-          <input type="text" class="form-control" id="formGroupFullNameInput" placeholder="Last Name">
-
-          <label >Email</label>
-          <input type="email" class="form-control" id="formGroupEmailInput" placeholder="Email">
-
-          <label >Password</label>
-          <input type="password" class="form-control" id="formGroupPasswordInput" placeholder="Password">
-
-          <label >Confirm Password</label>
-          <input type="email" class="form-control" id="formGroupCPasswordInput" placeholder="Confirm Password">
+   <div class="row animated fadeInLeft" style="padding:10px">
+    <div class="col-md-6 offset-md-3 jumbotron" style="background-color:#FFB6C1; color:#ffffff;">
+  
+    <div class="col-md-6" class="form-group">
+      <h1 class="display-5">My Profile</h1>
+    </br>
+      <p>Name:</p>
+       <p>Email:</p>
+        <p>Phone Number:</p>
+      </br>
+    <label for="exampleInputFile"><strong>Upload Image</strong></label>
+    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+    </br>
+  </div>
+  <div class="form-group">
+    <label for="exampleTextarea"><strong>Bio</strong></label>
+    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="My bio...."></textarea>
+          <div class="row">
+  <div class="col-lg-offset-3 col-lg-6">
+    <div class="input-group">
+      <span class="input-group-btn">
+        <a href="add-review.html" <button class="btn btn-secondary" type="button"><strong>Edit</strong></button></a>
+      </span><span class="input-group-btn">
+        <a href="add-review.html" <button class="btn btn-secondary" type="button"><strong>Update</strong></button></a>
+      </span>
+  </div>   
         </div>
-        <button type="button" class="btn btn-secondary btn-md btn-block">Join Now</button>
-      </form>
+      </div>
+      </br>
+
+      <div class="list-group">
+        <h6><strong></style>My Recipes</strong></h6>
+        <a href="#" class="list-group-item list-group-item-action">Recipe 1</a>
+        <a href="#" class="list-group-item list-group-item-action">Recipe 2</a>
+        <a href="#" class="list-group-item list-group-item-action">Recipe 3</a>
+        <a href="#" class="list-group-item list-group-item-action">Recipe 4</a>
+       </div>
+       </div>
+    </div>
     </div>
   </div>
-  
 </body>
 </html>
