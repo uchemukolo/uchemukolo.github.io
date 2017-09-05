@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home</title>
+  <title>More-Recipe</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" 
   integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" 
   crossorigin="anonymous">
@@ -45,81 +45,49 @@
         <a class="nav-link" href="#" style="color: #ffffff;">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="#" style="color: #ffffff;">Profile</a>
+        <a class="nav-link" href="#" style="color: #ffffff;">Profile</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" style="color: #ffffff;">Recipes</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <a href="#" class="btn btn-outline-danger my-2 my-sm-0" style="color:#ffffff;">Sign Out</a>
+      <input class="form-control mr-sm-2" type="text" placeholder="Username">
+      <input class="form-control mr-sm-2" type="password" placeholder="Password">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: #ffffff;">Sign In</button>
     </form>
   </div>
 </nav>
 
+<h4 class="container"> <span>More-Recipe</span> provides a platform for users to share the awesome and exciting recipe ideas they have invented or learnt.</h4>
+
 <div class="row animated fadeInLeft" style="padding:10px">
-  <div class="col-md-6 offset-md-3 jumbotron" style="background-color:#FFB6C1; color:#ffffff;">
-    <h3  style="text-align:center;">Add Recipe</h3>
-    <form>
-      </br>
-  <div class="form-group">
-    <label for="exampleInputEmail1"><strong>Name Of Recipe</strong></label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+    <div class="col-md-4 offset-md-4 jumbotron" style="background-color:#FFB6C1; color:#ffffff;">
+      <h3  style="text-align:center;">Register</h3>
+      <form>
+        <div class="form-group">
+          <label >Username</label>
+          <input type="text" class="form-control" id="formUsernameInput" placeholder="Username">
 
-        <label for="exampleInputFile"><strong>Upload Image</strong></label>
-    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+          <label >First Name</label>
+          <input type="text" class="form-control" id="formGroupFullNameInput" placeholder="First Name">
 
-        <label for="exampleTextarea"><strong>Description</strong></label>
-    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Describe your Recipe"></textarea>
+          <label >Last Name</label>
+          <input type="text" class="form-control" id="formGroupFullNameInput" placeholder="Last Name">
 
-        <label for="exampleSelect1"><strong>Meal Type</strong></label>
-    <select class="form-control col-md-6" id="exampleSelect1">
-      <option>Appetizers & Snacks</option>
-      <option>Breakfast</option>
-      <option>Dinner</option>
-      <option>Lunch</option>
-      <option>Drinks</option>
-      <option>Desserts</option>
-    </select>
+          <label >Email</label>
+          <input type="email" class="form-control" id="formGroupEmailInput" placeholder="Email">
 
-    <label for="exampleSelect1"><strong>Dish Type</strong></label>
-    <select class="form-control col-md-6" id="exampleSelect1">
-      <option>Soups and Stews</option>
-      <option>Salads</option>
-      <option>Breads</option>
-      <option>Cakes</option>
-      <option>Fruits</option>
-      <option>Smoothie</option>
-      <option>Wraps</option>
-      <option>Other</option>
+          <label >Password</label>
+          <input type="password" class="form-control" id="formGroupPasswordInput" placeholder="Password">
 
-    </select>
-
-    <label for="exampleSelect1"><strong>Ingredient</strong></label>
-    <select class="form-control col-md-6" id="exampleSelect1">
-      <option>Dairy</option>
-      <option>Poultry</option>
-      <option>Pork</option>
-      <option>Fish</option>
-      <option>Fruits</option>
-      <option>Grains</option>
-      <option>Vegetable</option>
-       <option>Pasta & Noodles</option>
-      <option>Seafoods</option>
-      <option>Meat</option>
-      <option>Others</option>
-    </select>
-
-    <label for="exampleTextarea"><strong>Preparations</strong></label>
-    <textarea class="form-control" id="exampleTextarea" rows="5"></textarea>    
-
+          <label >Confirm Password</label>
+          <input type="email" class="form-control" id="formGroupCPasswordInput" placeholder="Confirm Password">
+        </div>
+        <button type="button" class="btn btn-secondary btn-md btn-block">Join Now</button>
+      </form>
     </div>
-  <button type="submit" class="btn btn-secondary"><strong>Submit</strong></button>
-
-  
-</form> 
   </div>
-</div>
   
 </body>
 </html>

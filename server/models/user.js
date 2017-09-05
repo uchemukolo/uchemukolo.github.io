@@ -1,3 +1,5 @@
+'use strict'
+
 const Sequelize = require('../sequelize.js');
 
 
@@ -18,10 +20,16 @@ const UserAtrr = {
       isEmail: true
     }
   },
-  fullName: {
+  firstName: {
     type: Sequelize.STRING,
     allowNull: false
      },
+
+     lastName: {
+    type: Sequelize.STRING,
+    allowNull: false
+     },
+     
   password: {
     type: Sequelize.STRING,
     allowNull: false

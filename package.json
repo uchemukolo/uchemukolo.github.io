@@ -1,10 +1,10 @@
 {
   "name": "more-recipes",
   "version": "1.0.0",
-  "description": "Server side of the more recipe application",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node server/server.js",
+    "start": "nodemon --exec babel-node server/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
