@@ -26,7 +26,7 @@ module.exports = (sequelize, DataTypes) =>{
     allowNull: false,
   },
   preparations: {
-    type: DataTypes.STRING,
+    type: DataTypes.TEXT,
     unique: false,
   }
 
@@ -35,8 +35,8 @@ module.exports = (sequelize, DataTypes) =>{
   Recipe.associate = (models) => {
     Recipe.belongsTo(models.User, {
       foreignKey: 'recipe',
-      onDelete: 'CASCADE',
+      onDelete: 'CASCADE', 
     });
 
   return Recipe;
-};
+}; 
