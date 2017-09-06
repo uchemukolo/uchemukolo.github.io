@@ -1,11 +1,12 @@
-const signup = (req, res, next) => {
-	console.log(req.body);
-	next();
+// const signup = (req, res, next) => {
+// 	console.log(req.body);
+// 	next();
 
-const Userdata = require('../models').User;
-
-  module.exports = {
-  create(req, res) {
+// const Userdata = require('../models').User;
+import db from '../../models';
+const { User } = db;
+  export  function signup(req, res)  {
+   
     return User
       .create({
         username: req.body.username, 
@@ -16,9 +17,7 @@ const Userdata = require('../models').User;
       })
       .then(user => res.status(201).send(user))
       .catch(error => res.status(400).send(error));
-  },
-}; 
-}
+  }
 
-module.exports = signup;
+
 
