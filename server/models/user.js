@@ -1,43 +1,34 @@
-'use strict'
-
-const Sequelize = require('../sequelize.js');
-
-
-const UserAtrr = {
-  username: {
-    type: Sequelize.STRING,
-    allowNull: false,
-    unique: true,
-    validate: {
-      is: /^[a-z0-9\_\-]+$/i,
+module.exports = (sequelize, DataTypes) => {
+  const User = sequelize.define('User', {
+    username: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+    }, 
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+    },
+    firstname: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    lastname: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false,
     }
-  },
-  email: {
-    type: Sequelize.STRING,
-    unique: true,
-    
-    validate: {
-      isEmail: true
+  });
+
+User.associate = (models) => {
+    User.hasMany(models.Recipe, {
+      foreignKey: 'userId',
+      as: 'recipes',
     }
-  },
-  firstName: {
-    type: Sequelize.STRING,
-    allowNull: false
-     },
-
-     lastName: {
-    type: Sequelize.STRING,
-    allowNull: false
-     },
-     
-  password: {
-    type: Sequelize.STRING,
-    allowNull: false
-  },
-  salt: {
-    type: Sequelize.STRING
-  }
-}
-
-
-module.exports.Users = UserAtrr;
+    )};
+  return User;
+};

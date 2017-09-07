@@ -1,7 +1,7 @@
-import signup from './signup';
+const signup = require('./signup.js'); 
 
 const userController = {
 	signup,
 };
 
-export default userController;
+module.exports = userController;

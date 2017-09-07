@@ -1,22 +1,22 @@
 {
   "development": {
-    "username": "postgres",
-    "password": null,
+    "username": "UCHE MUKOLO",
+    "password": "mukolo",
     "database": "more-recipes",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
-  "test": {
-    "username": "postgres",
-    "password": null,
+  "test-local": {
+    "username": "UCHE MUKOLO",
+    "password": "mukolo",
     "database": "more-recipes_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
-  "test-local": {
-    "username": "postgres",
-    "password": null,
-    "database": "more-recipes_test-local",
+  "test": {
+    "username": "UCHE MUKOLO",
+    "password": "mukolo",
+    "database": "more-recipes",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }

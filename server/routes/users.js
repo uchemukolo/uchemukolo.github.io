@@ -1,5 +1,5 @@
-import express from 'express';
-import userController from '../controllers/users';
+const express = require('express');
+const userController = require('../controllers/users');
 
 const router = express.Router();
 
@@ -8,4 +8,4 @@ router.post('/signup', userController.signup);
 // api/v1/users/login
 // router.post('/login', userController.login);
 
-export default router;
+module.exports = router;
