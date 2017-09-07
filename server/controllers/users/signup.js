@@ -1,23 +1,21 @@
-// const signup = (req, res, next) => {
-// 	console.log(req.body);
-// 	next();
+import { User } from '../../models/index';
 
-// const Userdata = require('../models').User;
-import db from '../../models';
-const { User } = db;
-  export  function signup(req, res)  {
-   
-    return User
-      .create({
-        username: req.body.username, 
+const signup = (req, res) => {
+ const { username, email, firstname, lastname, password } = req.body
+  console.log(username, email, firstname, lastname, password); 
+  console.log(req);
+
+   return User.create({
+        username: req.body.username,
         email: req.body.email,
         firstname: req.body.firstname,
         lastname: req.body.lastname,
-        password: req.body.password,
+        password: req.body.lastname,
       })
       .then(user => res.status(201).send(user))
       .catch(error => res.status(400).send(error));
   }
 
 
+module.exports = signup;
 
