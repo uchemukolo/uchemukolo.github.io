@@ -1,5 +1,5 @@
 'use strict';
-module.exports = (sequelize, DataTypes) =>{
+module.exports = (sequelize, DataTypes) => {
   const Recipe = sequelize.define('Recipe', {
     name: {
     type: DataTypes.STRING,
@@ -29,14 +29,7 @@ module.exports = (sequelize, DataTypes) =>{
     type: DataTypes.TEXT,
     unique: false,
   }
-
-  });
-
-  Recipe.associate = (models) => {
-    Recipe.belongsTo(models.User, {
-      foreignKey: 'recipe',
-      onDelete: 'CASCADE', 
-    });
-
-  return Recipe;
-}; 
+   }
+  )
+ return Recipe;
+};
