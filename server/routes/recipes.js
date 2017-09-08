@@ -4,7 +4,7 @@ const recipeController = require('../controllers/recipe');
 const router = express.Router();
 
 // api/v1/users/signup
-router.post('/addRecipe', recipeController.addRecipe);
+router.post('/', recipeController.addRecipe);
 // api/v1/users/login
 // router.post('/login', userController.login);
 

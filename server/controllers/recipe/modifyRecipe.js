@@ -15,7 +15,7 @@ const Recipe = require('../models').Recipe;
         ingredients: req.body.ingredients,
         preparations: req.body.preparations,
       })
-      .then(user => res.status(201).send(user))
+      .then(recipe => res.status(201).send(user))
       .catch(error => res.status(400).send(error));
   },
 }; 
