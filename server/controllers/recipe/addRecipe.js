@@ -24,7 +24,7 @@
 // module.exports = addRecipe;
 
 
-import { Recipi } from '../../models/index';
+import { Recipe } from '../../models/recipe';
 
 const addRecipe = (req, res) => {
  const { recipeName, description, mealType, dishType, ingredients, preparations } = req.body
@@ -39,7 +39,7 @@ const addRecipe = (req, res) => {
         ingredients: req.body.ingredients,
         preparations: req.body.preparations,
       })
-      .then(user => res.status(201).send(user))
+      .then(recipe => res.status(201).send(user))
       .catch(error => res.status(400).send(error));
   }
 
